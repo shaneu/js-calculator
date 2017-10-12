@@ -1,0 +1,39 @@
+* {box-sizing: border-box;}
+
+main {
+  margin: 0 auto;
+  width: 50%;
+}
+
+button {
+  border-style: none;
+  padding: .2em;
+  background: #ddd;
+  width: 100%
+}
+
+button:active {
+  background: #bbb;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 2fr;
+  grid-gap: 1px;
+}
+
+.grid div {
+  border: 1px solid black;
+}
+
+.grid > div {
+  text-align: right;
+}
+
+.span2 {
+  grid-column-end: span 2;
+}
+
+.span4 {
+  grid-column-end: span 4;
+}
