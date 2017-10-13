@@ -150,9 +150,7 @@ const operationHandler = () => {
     updateDisplay(total);
     return;
   }
-  //  todo- figure out a way to allow an operation like 7 + 3, C, =, and have 7 appear
-  //  it will mean I have to refine the conditional for this block to allow it to fail the if and go on to the
-  //  else
+ 
   if (operator === equals || lastOperator) {
     if (numB || operator === equals) {
       total = equals(lastOperator, +numA, +numB || +numA);
